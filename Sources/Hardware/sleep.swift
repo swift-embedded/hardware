@@ -1,5 +1,6 @@
 import HardwareExt
 
-public func sleep(ms: Int) {
-    _sleep_ms(UInt32(ms))
+@inlinable
+public func sleep(_ interval: TimeInterval) {
+    _hardware_sleep_ms(UInt32(interval))
 }
