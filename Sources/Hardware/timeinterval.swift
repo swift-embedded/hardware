@@ -4,11 +4,11 @@ public typealias TimeInterval = UInt
 extension TimeInterval {
     @inlinable
     public static func seconds(_ value: UInt) -> TimeInterval {
-        return value
+        return value * 1000
     }
 
     @inlinable
     public static func milliseconds(_ value: UInt) -> TimeInterval {
-        return value * 1000
+        return value
     }
 }
